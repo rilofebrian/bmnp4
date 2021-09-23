@@ -2,9 +2,8 @@
     <div class="form"></div> <!-- Begin Page Content -->        
                     
         <div id="cover-caption">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7 col-lg-8 col-md-9 col-sm-11 mx-auto form p-4">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 mx-auto form p-2">
                         <div class="px-2">
                                 
                             <!-- Page Heading -->
@@ -28,79 +27,80 @@
                                 ?>
                                 </div>
                             </div>
-                            <div class="card">
-                                <h5 class="card-header text-center m-0 font-weight-bold text-primary">Form <?= $judul; ?></h5>
-                                <div class="card-body">
-                                    <form action="<?= base_url('peminjam/tambah'); ?>" class="justify-content-center" method="post">
+                            <div class="row justify-content-center">
+                                <div class="card col-11">
+                                    <h5 class="card-header text-center m-0 font-weight-bold text-primary">Form <?= $judul; ?></h5>
+                                    <div class="card-body">
+                                        <form action="<?= base_url('peminjam/tambah'); ?>" class="justify-content-center" method="post">
 
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label for="nama_depan">Nama Lengkap</label>
-                                                <input type="text" class="form-control" id="nama_depan" name="nama_depan" placeholder="Nama Depan" required>
+                                            <div class="row">
+                                                <div class="form-group col-xl-6">
+                                                    <label for="nama_depan">Nama Lengkap</label>
+                                                    <input type="text" class="form-control" id="nama_depan" name="nama_depan" placeholder="Nama Depan" required>
+                                                </div>
+                                                <div class="form-group col-xl-6">
+                                                    <label for="nama_belakang"><br></label>
+                                                    <input type="text" class="form-control" id="nama_belakang" name="nama_belakang" placeholder="Nama Belakang" required>
+                                                </div>
                                             </div>
-                                            <div class="form-group col-md-6">
-                                                <label for="nama_belakang"><br></label>
-                                                <input type="text" class="form-control" id="nama_belakang" name="nama_belakang" placeholder="Nama Belakang" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="subbagian">SubBagian</label>
-                                            <select id="subbagian" name="subbagian" class="form-control" required>
-                                                <option value="" selected>-- Pilih Subbagian --</option>
-                                                <?php foreach ($subbagian as $s) { ?>
-                                                    <option value="<?= $s['id_subbagian']; ?>"><?= $s['nm_subbagian']; ?></option>
-                                                <?php } ?>
-                                            </select>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-9">
-                                                <label for="barang">Barang</label>
-                                                <select id="barang" name="barang" class="form-control" required>
-                                                    <option value="" selected>-- Pilih Barang --</option>
-                                                    <?php foreach ($barang as $s) { ?>
-                                                        <option value="<?= $s['id']; ?>"><?= $s['nm_barang']; ?></option>
+                                            <div class="form-group">
+                                                <label for="subbagian">SubBagian</label>
+                                                <select id="subbagian" name="subbagian" class="form-control" required>
+                                                    <option value="" selected>-- Pilih Subbagian --</option>
+                                                    <?php foreach ($subbagian as $s) { ?>
+                                                        <option value="<?= $s['id_subbagian']; ?>"><?= $s['nm_subbagian']; ?></option>
                                                     <?php } ?>
                                                 </select>
                                             </div>
-                                            <div class="form-group col-md-3">
-                                                <label for="jumlah">Jumlah</label>
-                                                <!-- <div class="input-group"> -->
-                                                    <!-- <span class="input-group-prepend">
-                                                        <button id="tambah" type="button" class="btn btn-outline-danger btn-number" data-type="minus" data-field="quant[1]">
-                                                            <span class="fa fa-minus"></span>
-                                                        </button>
-                                                    </span> -->
-                                                    <input id="hasil" type="number" name="jml_pinjam" class="form-control input-number" value="0" min="1">
-                                                    <!-- <span class="input-group-append">
-                                                        <button id="kurang" type="button" class="btn btn-outline-success btn-number" data-type="plus" data-field="quant[1]">
-                                                            <span class="fa fa-plus"></span>
-                                                        </button>
-                                                    </span> -->
-                                                <!-- </div> -->
+                                            <div class="form-row">
+                                                <div class="form-group col-xl-9">
+                                                    <label for="barang">Barang</label>
+                                                    <select id="barang" name="barang" class="form-control" required>
+                                                        <option value="" selected>-- Pilih Barang --</option>
+                                                        <?php foreach ($barang as $s) { ?>
+                                                            <option value="<?= $s['id']; ?>"><?= $s['nm_barang']; ?></option>
+                                                        <?php } ?>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-xl-3">
+                                                    <label for="jumlah">Jumlah</label>
+                                                    <!-- <div class="input-group"> -->
+                                                        <!-- <span class="input-group-prepend">
+                                                            <button id="tambah" type="button" class="btn btn-outline-danger btn-number" data-type="minus" data-field="quant[1]">
+                                                                <span class="fa fa-minus"></span>
+                                                            </button>
+                                                        </span> -->
+                                                        <input id="hasil" type="number" name="jml_pinjam" class="form-control input-number" value="0" min="1">
+                                                        <!-- <span class="input-group-append">
+                                                            <button id="kurang" type="button" class="btn btn-outline-success btn-number" data-type="plus" data-field="quant[1]">
+                                                                <span class="fa fa-plus"></span>
+                                                            </button>
+                                                        </span> -->
+                                                    <!-- </div> -->
+                                                </div>
+                                                <!-- <div class="form-group col-md-3">
+                                                    <label for="satuan"></label>
+                                                    <select id="satuan" class="form-control">
+                                                        <option selected>Satuan</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div> -->
                                             </div>
-                                            <!-- <div class="form-group col-md-3">
-                                                <label for="satuan"></label>
-                                                <select id="satuan" class="form-control">
-                                                    <option selected>Satuan</option>
-                                                    <option>...</option>
-                                                </select>
-                                            </div> -->
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Tanggal</label>
-                                            <input type="date" name="tgl_pinjam" class="form-control" value="<?= $now; ?>" placeholder="Pilih Tanggal" required>
-                                        </div>
-                                        <button type="submit" name="tambah" class="btn btn-primary btn-block">Simpan</button>
-                                    </form>
-                                    <p class="card-text text-center" style="transform: rotate(0); color:#858796;">
-                                        <a href="<?= base_url('masuk'); ?>" class="text-decoration-none stretched-link">Klik Disini</a> jika anda login sebagai Admin/PIC.
-                                    </p>
+                                            <div class="form-group">
+                                                <label for="">Tanggal</label>
+                                                <input type="date" name="tgl_pinjam" class="form-control" value="<?= $now; ?>" placeholder="Pilih Tanggal" required>
+                                            </div>
+                                            <button type="submit" name="tambah" class="btn btn-primary btn-block">Simpan</button>
+                                        </form>
+                                        <p class="card-text text-center" style="transform: rotate(0); color:#858796;">
+                                            <a href="<?= base_url('masuk'); ?>" class="text-decoration-none stretched-link">Klik Disini</a> jika anda login sebagai Admin/PIC.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
         <!-- End of Main Content -->
 
