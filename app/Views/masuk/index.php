@@ -6,6 +6,7 @@
 </head>
 <body>
     <!-- <nav class="navbar navbar-expand topbar mb-4 static-top"></nav> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
             <div class="col-md-6">
