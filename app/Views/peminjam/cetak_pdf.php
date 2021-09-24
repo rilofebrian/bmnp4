@@ -50,18 +50,4 @@
         </tr>
     </table>
 </body>
-    
-    <div style="margin-top: 300px; margin-right:40px;">
-        <p align="right"><?= $jabatan; ?>,</p>
-    </div>
-    
-    <div style="margin-top: 300px; padding-right:40px;">
-
-        <p align="right" ><?= $nama_penandatangan; ?><br>
-            NIP. <?= $nip; ?>
-        </p>
-
-    </div>
-
-    <br>
 </html>
