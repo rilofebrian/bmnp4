@@ -6,11 +6,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand topbar mb-4 static-top"></nav>
+    <nav class="navbar navbar-expand topbar mb-2 static-top"></nav>
     <!-- <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <div class="form"></div>
             <!-- Begin Page Content -->
     <div id="cover-caption">
         <div class="row justify-content-center">
