@@ -56,8 +56,7 @@
                         <canvas id="peminjamanChart" width="668" height="320" style="display: block; width: 668px; height: 320px;" class="chartjs-render-monitor"></canvas>
                     </div>
                     <hr>
-                    Grafik yang didapatkan dari Total Peminjaman barang Setiap Bulan
-                    <code>untuk memudahkan dalam menganalisa data</code>.
+                    Grafik Total Peminjaman Barang
                 </div>
             </div>
 
