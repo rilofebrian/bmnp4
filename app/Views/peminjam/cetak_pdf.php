@@ -22,20 +22,13 @@
         Tanggal cetak : <?= date('d-m-Y', strtotime($now)) ?><br>
     </p>
 
-    <p align="center" style="font-size:16px;">
+    <p align="center" style="font-size:14px;">
         Form Bukti Pengambilan Barang
     </p>
-
-    <!-- <img src="<?= base_url('/assets/img/logop4.jpg'); ?>" style="height:10px;"> -->
-
-    <p> 
-        Bagian Perencanaan, Pengembangan, dan Pemberhentian Pegawai 
-    </p>
-    <hr>
-    <p>
-        Data Peminjam<br>
-        Nama Lengkap : <?= $nama_depan; ?> <?= $nama_belakang; ?> <br>
-        Subbagian : <?= $nm_subbagian; ?>
+    <p align="left">
+    Bagian Perencanaan, Pengembangan, dan Pemberhentian Pegawai <br>
+    Nama Lengkap : <?= $nama_depan; ?> <?= $nama_belakang; ?> <br>
+    Subbagian : <?= $nm_subbagian; ?>
     </p>
     <table cellpadding="6">
         <tr>
@@ -50,4 +43,18 @@
         </tr>
     </table>
 </body>
+    
+    <!-- <div style="margin-top: 300px; margin-right:40px;">
+        <p align="right"><?= $jabatan; ?>,</p>
+    </div>
+    
+    <div style="margin-top: 300px; padding-right:40px;">
+
+        <p align="right" ><?= $nama_penandatangan; ?><br>
+            NIP. <?= $nip; ?>
+        </p>
+
+    </div>
+
+    <br> -->
 </html>
