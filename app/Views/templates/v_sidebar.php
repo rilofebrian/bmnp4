@@ -37,7 +37,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('pinjam'); ?>">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Data Peminjam</span></a>
+                    <span>Data Pengambil</span></a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
