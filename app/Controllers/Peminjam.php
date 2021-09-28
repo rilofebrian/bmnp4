@@ -36,7 +36,7 @@
             $now = date('Y-m-d');
 
             $data = [
-                'judul' => 'Peminjaman/Pengambilan Barang',
+                'judul' => 'Pengambilan Barang',
                 'now' => $now,
                 'subbagian' => $this->M_Subbagian->getAllData(),
                 'barang' => $this->M_Barang->getDataStok_Ada(),
